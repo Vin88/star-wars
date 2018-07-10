@@ -157,11 +157,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var angular_datatables__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angular-datatables */ "./node_modules/angular-datatables/index.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _dashboard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dashboard */ "./src/app/dashboard/index.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _dashboard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dashboard */ "./src/app/dashboard/index.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./page-not-found/page-not-found.component */ "./src/app/page-not-found/page-not-found.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -175,25 +174,23 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
-
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _dashboard__WEBPACK_IMPORTED_MODULE_5__["DashboardComponent"],
-                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_7__["PageNotFoundComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _dashboard__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"],
+                _page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_6__["PageNotFoundComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
-                angular_datatables__WEBPACK_IMPORTED_MODULE_3__["DataTablesModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingBaseModule"]
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingBaseModule"]
             ],
-            providers: [_dashboard__WEBPACK_IMPORTED_MODULE_5__["StarsService"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            providers: [_dashboard__WEBPACK_IMPORTED_MODULE_4__["StarsService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -210,7 +207,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".child_row>td{\n    padding: 0px !important;\n}\n\n.child_row .accordian-body{\n    padding: 10px;\n}"
+module.exports = ".child_row>td{\n    padding: 0px !important;\n}\n\n.child_row .accordian-body{\n    padding: 10px;\n}\n\n.main_content{\n    margin-top: 60px;\n}"
 
 /***/ }),
 
@@ -221,7 +218,7 @@ module.exports = ".child_row>td{\n    padding: 0px !important;\n}\n\n.child_row 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"fixed-nav sticky-footer bg-dark\" id=\"page-top\">\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\" id=\"mainNav\">\n    <a class=\"navbar-brand\" href=\"index.html\">Start Bootstrap</a>\n    <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\"\n      aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n      <ul class=\"navbar-nav navbar-sidenav\" id=\"exampleAccordion\">\n        <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Dashboard\">\n          <a class=\"nav-link\" routerLink=\"/dashboard\"\n          routerLinkActive=\"active\">\n            <i class=\"fa fa-fw fa-dashboard\"></i>\n            <span class=\"nav-link-text\">Dashboard</span>\n          </a>\n        </li>\n\n      </ul>\n      <ul class=\"navbar-nav sidenav-toggler\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link text-center\" id=\"sidenavToggler\">\n            <i class=\"fa fa-fw fa-angle-left\"></i>\n          </a>\n        </li>\n      </ul>\n\n    </div>\n  </nav>\n  <div class=\"content-wrapper\">\n    <div class=\"container-fluid\">\n      <!-- Breadcrumbs-->\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\">\n          <a href=\"#\">Dashboard</a>\n        </li>\n        <li class=\"breadcrumb-item active\">My Dashboard</li>\n      </ol>\n      <!-- Icon Cards-->\n    </div>\n    <div class=\"container-fluid\">\n      <!-- Example DataTables Card-->\n      <div class=\"card mb-3\">\n        <div class=\"card-header\">\n          <i class=\"fa fa-table\"></i>Star Wars</div>\n        <div class=\"card-body\">\n          \n          <div class=\"row\" *ngIf=\"loader\">\n            <div class=\"data_loader\">\n                <img src=\"assets/loader.gif\" alt=\"Loading..\" >\n            </div>\n          </div>\n          <div class=\"table-responsive\" *ngIf=\"!loader\">\n            <p *ngIf=\"stars.length <= 0\">{{err}}</p>\n            <table class=\"table table-striped\"  width=\"100%\" cellspacing=\"0\" *ngIf=\"stars.length > 0\">\n              <thead>\n                <tr>\n                  <th>Name</th>\n                  <th>Birth Year</th>\n                  <th>Gender</th>\n                  <th>Number of Films</th>\n                  \n                </tr>\n              </thead>\n              <tbody *ngFor=\"let star of stars; let i = index;\" >\n                <tr data-toggle=\"collapse\" [attr.data-target]=\"'#demo'+i\" class=\"accordion-toggle\">\n                  <td>{{star.name}}</td>\n                  <td>{{star.birth_year}}</td>\n                  <td>{{star.gender}}</td>\n                  <td>{{star.films.length}}</td>\n\n                </tr>\n                <tr class=\"child_row\">\n                  <td colspan=\"4\" class=\"hiddenRow\">\n                    <div class=\"accordian-body collapse\" id=\"demo{{i}}\">\n                        <h6>{{star.name}}</h6>\n                        <div class=\"row\" >\n                            <div class=\"col-md-4\">\n                              <div class=\"row\"><div class=\"col-md-3\">Height</div><div class=\"col-md-5\">{{star.height}}</div></div>\n                              <div class=\"row\"><div class=\"col-md-3\">Mass</div><div class=\"col-md-5\">{{star.mass}}</div></div>\n                              <div class=\"row\"><div class=\"col-md-3\">Hair Color</div><div class=\"col-md-5\">{{star.height}}</div></div>\n                            </div>\n                            <div class=\"col-md-6\">\n                              <div class=\"row\"><div class=\"col-md-6\">Eye color</div><div class=\"col-md-6\">{{star.eye_color}}</div></div>\n                              <div class=\"row\"><div class=\"col-md-6\">Home world</div><div class=\"col-md-6\">{{star.homeworld}}</div></div>\n                            </div>\n                          </div>\n                    </div>\n                  </td>\n                </tr>\n              </tbody>\n            </table>\n          </div>\n        </div>\n        <div class=\"card-footer small text-muted\">Updated yesterday at 11:59 PM</div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"fixed-nav sticky-footer bg-dark\" id=\"page-top\">\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\" id=\"mainNav\">\n    <a class=\"navbar-brand\" href=\"index.html\">Start Bootstrap</a>\n    <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\"\n      aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n      <ul class=\"navbar-nav navbar-sidenav\" id=\"exampleAccordion\">\n        <li class=\"nav-item\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Dashboard\">\n          <a class=\"nav-link\" routerLink=\"/dashboard\"\n          routerLinkActive=\"active\">\n            <i class=\"fa fa-fw fa-dashboard\"></i>\n            <span class=\"nav-link-text\">Dashboard</span>\n          </a>\n        </li>\n\n      </ul>\n      <ul class=\"navbar-nav sidenav-toggler\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link text-center\" id=\"sidenavToggler\">\n            <i class=\"fa fa-fw fa-angle-left\"></i>\n          </a>\n        </li>\n      </ul>\n\n    </div>\n  </nav>\n  <div class=\"content-wrapper\">\n    <div class=\"container-fluid main_content\">\n      <!-- Example DataTables Card-->\n      <div class=\"card mb-3\">\n        <div class=\"card-header\">\n          <i class=\"fa fa-table\"></i><h3 class=\"text-center\">People of star wars</h3></div>\n        <div class=\"card-body\">\n          \n          <div class=\"row\" *ngIf=\"loader\">\n            <div class=\"data_loader\">\n                <img src=\"assets/loader.gif\" alt=\"Loading..\" >\n            </div>\n          </div>\n          <div class=\"table-responsive\" *ngIf=\"!loader\">\n            <p *ngIf=\"stars.length <= 0\">{{err}}</p>\n            <table class=\"table table-striped\"  width=\"100%\" cellspacing=\"0\" *ngIf=\"stars.length > 0\">\n              <thead>\n                <tr>\n                  <th>Name</th>\n                  <th>Birth Year</th>\n                  <th>Gender</th>\n                  <th>Number of Films</th>\n                  \n                </tr>\n              </thead>\n              <tbody *ngFor=\"let star of stars; let i = index;\" >\n                <tr data-toggle=\"collapse\" [attr.data-target]=\"'#demo'+i\" class=\"accordion-toggle\">\n                  <td>{{star.name}}</td>\n                  <td>{{star.birth_year}}</td>\n                  <td>{{star.gender}}</td>\n                  <td>{{star.films.length}}</td>\n\n                </tr>\n                <tr class=\"child_row\">\n                  <td colspan=\"4\" class=\"hiddenRow\">\n                    <div class=\"accordian-body collapse\" id=\"demo{{i}}\">\n                        <h6>{{star.name}}</h6>\n                        <div class=\"row\" >\n                            <div class=\"col-md-4\">\n                              <div class=\"row\"><div class=\"col-md-3\">Height</div><div class=\"col-md-5\">{{star.height}}</div></div>\n                              <div class=\"row\"><div class=\"col-md-3\">Mass</div><div class=\"col-md-5\">{{star.mass}}</div></div>\n                              <div class=\"row\"><div class=\"col-md-3\">Hair Color</div><div class=\"col-md-5\">{{star.height}}</div></div>\n                            </div>\n                            <div class=\"col-md-6\">\n                              <div class=\"row\"><div class=\"col-md-6\">Eye color</div><div class=\"col-md-6\">{{star.eye_color}}</div></div>\n                              <div class=\"row\"><div class=\"col-md-6\">Home world</div><div class=\"col-md-6\"><a href=\"{{star.homeworld}}\" target=\"_blank_blank\">Link</a>&nbsp;&nbsp;({{star.homeworld}})</div></div>\n                            </div>\n                          </div>\n                    </div>\n                  </td>\n                </tr>\n              </tbody>\n            </table>\n          </div>\n        </div>\n        <div class=\"card-footer small text-muted\">Updated yesterday at 11:59 PM</div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -497,7 +494,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/vinothiy/Desktop/Ang5/star-wars/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/vinothiy/Desktop/Ang5/SSN-Test/src/main.ts */"./src/main.ts");
 
 
 /***/ })
