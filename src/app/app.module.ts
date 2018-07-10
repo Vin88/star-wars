@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { DataTablesModule } from 'angular-datatables';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent, StarsService } from './dashboard';
@@ -17,7 +16,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   imports: [
     BrowserModule,
     HttpClientModule,
-    DataTablesModule,
     AppRoutingBaseModule
   ],
   providers: [ StarsService ],

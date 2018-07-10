@@ -27,21 +27,11 @@
     </div>
   </nav>
   <div class="content-wrapper">
-    <div class="container-fluid">
-      <!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
-        </li>
-        <li class="breadcrumb-item active">My Dashboard</li>
-      </ol>
-      <!-- Icon Cards-->
-    </div>
-    <div class="container-fluid">
+    <div class="container-fluid main_content">
       <!-- Example DataTables Card-->
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-table"></i>Star Wars</div>
+          <i class="fa fa-table"></i><h3 class="text-center">People of star wars</h3></div>
         <div class="card-body">
           
           <div class="row" *ngIf="loader">
@@ -81,7 +71,7 @@
                             </div>
                             <div class="col-md-6">
                               <div class="row"><div class="col-md-6">Eye color</div><div class="col-md-6">{{star.eye_color}}</div></div>
-                              <div class="row"><div class="col-md-6">Home world</div><div class="col-md-6">{{star.homeworld}}</div></div>
+                              <div class="row"><div class="col-md-6">Home world</div><div class="col-md-6"><a href="{{star.homeworld}}" target="_blank">Link</a>&nbsp;&nbsp;({{star.homeworld}})</div></div>
                             </div>
                           </div>
                     </div>

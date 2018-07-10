@@ -621,9 +621,9 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/vinothiy/Desktop/Ang5/star-wars/node_modules/bootstrap/dist/css/bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
-__webpack_require__(/*! /Users/vinothiy/Desktop/Ang5/star-wars/src/assets/sb-admin.css */"./src/assets/sb-admin.css");
-module.exports = __webpack_require__(/*! /Users/vinothiy/Desktop/Ang5/star-wars/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /Users/vinothiy/Desktop/Ang5/SSN-Test/node_modules/bootstrap/dist/css/bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
+__webpack_require__(/*! /Users/vinothiy/Desktop/Ang5/SSN-Test/src/assets/sb-admin.css */"./src/assets/sb-admin.css");
+module.exports = __webpack_require__(/*! /Users/vinothiy/Desktop/Ang5/SSN-Test/src/styles.css */"./src/styles.css");
 
 
 /***/ })
