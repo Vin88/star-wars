@@ -15,4 +15,5 @@ export class Stars {
     url: string;
     vehicles: Array<String>;
     films: Array<String>;
+    active = 'inactive';
 }

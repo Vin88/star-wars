@@ -39,7 +39,7 @@
                 <img src="assets/loader.gif" alt="Loading.." >
             </div>
           </div>
-          <div class="table-responsive" *ngIf="!loader">
+          <div class="table-responsive" *ngIf="!loader" [@flyInOut]="'in'">
             <p *ngIf="stars.length <= 0">{{err}}</p>
             <table class="table table-striped"  width="100%" cellspacing="0" *ngIf="stars.length > 0">
               <thead>
@@ -52,7 +52,7 @@
                 </tr>
               </thead>
               <tbody *ngFor="let star of stars; let i = index;" >
-                <tr data-toggle="collapse" [attr.data-target]="'#demo'+i" class="accordion-toggle">
+                <tr data-toggle="collapse" [attr.data-target]="'#demo'+i" class="accordion-toggle" (click)="showStar(i)" [@heroState]="star.active">
                   <td>{{star.name}}</td>
                   <td>{{star.birth_year}}</td>
                   <td>{{star.gender}}</td>
