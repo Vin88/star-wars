@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<div class="fixed-nav sticky-footer bg-dark" id="page-top">
+        <app-left-menu></app-left-menu>
+        <div class="content-wrapper">
+          <div class="container-fluid main_content">
+
+                <router-outlet></router-outlet>
+                <select (change)="changeLanguage(selectedLang)" [(ngModel)]="selectedLang">
+                        <option *ngFor="let lang of lang_support" [value]="lang.key">{{lang.value}}</option>
+                    </select>
+          </div>
+        </div>
+      </div>
+      

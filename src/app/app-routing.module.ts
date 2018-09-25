@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LazyloadComponent } from './lazyload/lazyload.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent
+  },
+  {
+    path: 'lazyload',
+    loadChildren: './lazyload/lazyload.module#LazyloadModule'
   },
   {
     path: '**',

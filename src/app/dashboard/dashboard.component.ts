@@ -6,9 +6,11 @@ import {
   animate,
   transition
 } from '@angular/animations';
-import { Router } from '@angular/router';
 import { StarsService } from './stars.service';
 import { Stars } from './stars';
+import { CounterService } from '../shared/counter.service';
+import { LeftMenuComponent } from '../shared/left-menu/left-menu.component';
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -50,7 +52,7 @@ export class DashboardComponent implements OnInit {
   loader: boolean;
   err: string;
   stars: Array<Stars> = [];
-  constructor(private starsService: StarsService) {
+  constructor(private starsService: StarsService, private _counterSvc: CounterService, translate: TranslateService) {
   }
 
   /**
@@ -85,6 +87,11 @@ export class DashboardComponent implements OnInit {
 
   showStar(index) {
     this.stars[index].active = this.stars[index].active === 'active' ? 'inactive' : 'active';
+  }
+
+
+  incrementCounter() {
+    this._counterSvc.counterValue = this._counterSvc.counterValue + 1;
   }
 
 }
